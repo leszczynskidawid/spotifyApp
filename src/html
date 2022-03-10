@@ -1,0 +1,114 @@
+ <div className="headerText-container">
+          <div className="h1-container">
+          <h1 className="headerText-header one"> Listening is</h1>
+          <h1 className="headerText-header two">everything
+          </h1>
+          </div>
+          <h3 className="info-text-header">Miliony utworów i podcastów.Bez podawania karty kredytowej</h3>
+          <button className="btn create-account-header">Załóż konto spotify free</button>
+        </div>
+        <div className="circle top"></div>
+        <div className="circle bottom"></div>
+        <div className="circle bottom grey"></div>
+        <div className="circle left"></div>
+
+
+        .app
+{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(41, 65, 171);
+  position: relative;
+  overflow: hidden;
+}
+
+.headerText-container
+{
+  position: absolute;
+  top:50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#1ed760;
+  font-family:spotify-circular, Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 60%;
+  z-index: 3;
+
+}
+
+.headerText-header
+{
+  font-size:8rem;
+  font-weight: 900;
+  letter-spacing: -7px;
+ line-height: 4rem;
+}
+.headerText-header.one
+{
+  text-align: left;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+}
+.headerText-header.two
+{
+  text-align: right
+}
+.btn
+{
+ background-color: #1ed760;
+ color:rgb(41, 65, 171); 
+ text-transform: uppercase;
+ border-radius:2rem;
+ border: none;
+ padding: 1rem 3rem;
+ font-weight: 700;
+ margin-top: 2em;
+ cursor: pointer;
+}
+.btn:hover
+{
+  transform: scale(1.1);
+}
+.circle
+{
+  background-color: #1ed760;
+  position: absolute;
+  border-radius: 50%;
+  
+}
+.top
+{
+  width: 650px;
+  height: 650px;
+  top:0%; 
+  right: -36%;
+}
+.left
+{
+  width: 650px;
+  height: 650px;
+  bottom: -40%;
+  left: -20%;
+  z-index: 5;
+}
+.bottom
+{
+  width:250px;
+  height: 250px;
+  background-color: rgb(41, 65, 171); 
+  top:40%;
+  left: -8%;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.grey
+{
+  width:250px;
+  height: 250px;
+  background-color: transparent;
+  top:40%;
+  left: -8%;
+  border: 2px solid black;
+  z-index: -1;
+}
